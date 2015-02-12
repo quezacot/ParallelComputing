@@ -1,0 +1,13 @@
+$ mpirun -n 5 python P1parallel.py 
+Rank 4, start: 10066328, end: 12582910
+Rank 3, start: 7549746, end: 10066328
+Rank 2, start: 5033164, end: 7549746
+Rank 0, start: 0, end: 2516582
+Rank 1, start: 2516582, end: 5033164
+Serial Time: 7.974497 secs
+Parallel Time: 2.939771 secs
+Parallel Result = 3144542.993819
+Serial Result   = 3144543.496082
+Relative Error  = 1.597252e-07
+***LARGE ERROR - POSSIBLE FAILURE!***
+

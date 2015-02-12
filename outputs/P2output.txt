@@ -1,0 +1,65 @@
+Serial:
+ImageSize = 512
+Serial Time: 34.991015 secs
+ImageSize = 1024
+Serial Time: 128.230668 secs
+ImageSize = 2048
+Serial Time: 461.288758 secs
+
+send/recv:
+P= 1 ImageSize= 512
+Parallel Time: 35.776352 secs
+P= 2 ImageSize= 512
+Parallel Time: 20.023972 secs
+P= 4 ImageSize= 512
+Parallel Time: 14.967098 secs
+P= 8 ImageSize= 512
+Parallel Time: 14.343754 secs
+
+P= 1 ImageSize= 1024
+Parallel Time: 125.424758 secs
+P= 2 ImageSize= 1024
+Parallel Time: 75.536666 secs
+P= 4 ImageSize= 1024
+Parallel Time: 55.173411 secs
+P= 8 ImageSize= 1024
+Parallel Time: 58.077166 secs
+
+P= 1 ImageSize= 2048
+Parallel Time: 459.184157 secs
+P= 2 ImageSize= 2048
+Parallel Time: 289.896816 secs
+P= 4 ImageSize= 2048
+Parallel Time: 227.721374 secs
+P= 8 ImageSize= 2048
+Parallel Time: 220.206062 secs
+
+scatter/reduce:
+P= 1 ImageSize= 512
+Parallel Time: 36.316082 secs
+P= 2 ImageSize= 512
+Parallel Time: 19.927191 secs
+P= 4 ImageSize= 512
+Parallel Time: 14.319680 secs
+P= 8 ImageSize= 512
+Parallel Time: 14.437781 secs
+
+P= 1 ImageSize= 1024
+Parallel Time: 132.519379 secs
+P= 2 ImageSize= 1024
+Parallel Time: 82.207746 secs
+P= 4 ImageSize= 1024
+Parallel Time: 59.820830 secs
+P= 8 ImageSize= 1024
+Parallel Time: 62.390554 secs
+
+P= 1 ImageSize= 2048
+Parallel Time: 482.721758 secs
+P= 2 ImageSize= 2048
+Parallel Time: 295.325730 secs
+P= 4 ImageSize= 2048
+Parallel Time: 229.271164 secs
+P= 8 ImageSize= 2048
+Parallel Time: 237.314398 secs
+
+

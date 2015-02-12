@@ -1,0 +1,15 @@
+Image size: 1024*1024
+Serial: Time: 27.399470 secs
+P=2 Time: 32.791067 secs
+P=4 Time: 20.692253 secs
+P=8 Time: 18.667063 secs
+
+P4Sally: P=1, Time: 27.162017 secs
+P4Sally: P=2, Time: 19.400756 secs
+P4Sally: P=4, Time: 19.720672 secs
+P4Sally: P=8, Time: 19.824569 secs
+
+P4John: P=1, process=128 Time: 27.061367 secs
+P4John: P=2, process=128 Time: 14.857784 secs
+P4John: P=4, process=128 Time: 17.114462 secs
+P4John: P=8, process=128 Time: 18.417135 secs
