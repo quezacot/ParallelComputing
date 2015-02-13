@@ -1,0 +1,19 @@
+a
+P= 1 (Nx,Ny)= 640 640 (Px,Py)= 1 1
+Parallel Time: 61.170034 secs
+P= 2 (Nx,Ny)= 640 640 (Px,Py)= 1 2
+Parallel Time: 65.660329 secs
+P= 4 (Nx,Ny)= 640 640 (Px,Py)= 2 2
+Parallel Time: 67.984779 secs
+P= 8 (Nx,Ny)= 640 640 (Px,Py)= 2 4
+Parallel Time: 59.669280 secs
+
+b
+P= 1 (Nx,Ny)= 640 640 (Px,Py)= 1 1
+Parallel Time: 68.168858 secs
+P= 2 (Nx,Ny)= 640 640 (Px,Py)= 1 2
+Parallel Time: 60.567985 secs
+P= 4 (Nx,Ny)= 640 640 (Px,Py)= 2 2
+Parallel Time: 74.184156 secs
+P= 8 (Nx,Ny)= 640 640 (Px,Py)= 2 4
+Parallel Time: 73.222499 secs

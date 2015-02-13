@@ -112,7 +112,7 @@ if __name__ == '__main__':
     Py = int(sys.argv[2])
     xMin, xMax = 0.0, 1.0     # Domain boundaries
     yMin, yMax = 0.0, 1.0     # Domain boundaries
-    Nx = 64                   # Number of total grid points in x
+    Nx = 640                  # Number of total grid points in x
     Ny = Nx                   # Number of total grid points in y
     dx = (xMax-xMin)/(Nx-1)   # Grid spacing, Delta x
     dy = (yMax-yMin)/(Ny-1)   # Grid spacing, Delta y
@@ -128,6 +128,9 @@ if __name__ == '__main__':
     coord = cart.Get_coords(rank)
     size = comm.Get_size()
     nrow, ncol = coord
+    
+    comm.barrier()
+    p_start = MPI.Wtime()
     
     assert Px*Py <= size
     # The global indices: I[i,j] and J[i,j] are indices of u[i,j]
@@ -158,9 +161,16 @@ if __name__ == '__main__':
         um, u, up = u, up, um
 
         # Output and draw Occasionally
-        if k % 10 == 0:
+        if k % 100 == 0:
             print "Step: %d  Time: %f" % (k,t)
-            plotter.draw_now(I[1:Ix,1:Iy], J[1:Ix,1:Iy], u[1:Ix,1:Iy])
-    plotter.save_now(I, J, u, "P3b-FinalWave.png")
+            #plotter.draw_now(I[1:Ix,1:Iy], J[1:Ix,1:Iy], u[1:Ix,1:Iy])
+
+    comm.barrier()
+    p_stop = MPI.Wtime()
+    if rank==0:
+        print "P=", size, "(Nx,Ny)=", Nx,Ny, "(Px,Py)=", Px,Py
+        print "Parallel Time: %f secs" % (p_stop - p_start)
+        
+    plotter.save_now(I, J, u, "P3b-FinalWave"+ str(Px) + "_" + str(Py) +".png")
 
 
