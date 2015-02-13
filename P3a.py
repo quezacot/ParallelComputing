@@ -85,15 +85,13 @@ def set_ghost_points(u, cart):
 
 if __name__ == '__main__':
     # Global constants
-    Px = 2
-    Py = 4
     # input Px and Py
     Px = int(sys.argv[1])
     Py = int(sys.argv[2])
     xMin, xMax = 0.0, 1.0     # Domain boundaries
     yMin, yMax = 0.0, 1.0     # Domain boundaries
-    Nx = 640                  # Number of total grid points in x
-    Ny = Nx                   # Number of total grid points in y
+    Nx = 1280                 # Number of total grid points in x
+    Ny = 640                  # Number of total grid points in y
     dx = (xMax-xMin)/(Nx-1)   # Grid spacing, Delta x
     dy = (yMax-yMin)/(Ny-1)   # Grid spacing, Delta y
     dt = 0.4 * dx             # Time step (Magic factor of 0.4)
@@ -121,7 +119,7 @@ if __name__ == '__main__':
 
     # Set the initial conditions
     up, u, um = initial_conditions(DTDX, I*dx-0.5, J*dy, cart)
-
+    print u.shape
     # Setup the serial plotter -- one plot per process
     # plotter = MeshPlotter3D()
     # Setup the parallel plotter -- one plot gathered from all processes

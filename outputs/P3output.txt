@@ -8,6 +8,15 @@ Parallel Time: 67.984779 secs
 P= 8 (Nx,Ny)= 640 640 (Px,Py)= 2 4
 Parallel Time: 59.669280 secs
 
+P= 1 (Nx,Ny)= 1280 640 (Px,Py)= 1 1
+Parallel Time: 264.903723 secs
+P= 2 (Nx,Ny)= 1280 640 (Px,Py)= 1 2
+Parallel Time: 245.425683 secs
+P= 4 (Nx,Ny)= 1280 640 (Px,Py)= 2 2
+Parallel Time: 260.074832 secs
+P= 8 (Nx,Ny)= 1280 640 (Px,Py)= 2 4
+Parallel Time: 259.885822 secs
+
 b
 P= 1 (Nx,Ny)= 640 640 (Px,Py)= 1 1
 Parallel Time: 68.168858 secs
